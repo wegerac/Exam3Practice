@@ -5,8 +5,8 @@ This problem provides practice at:
   ***  FOR and WHILE loops.  ***
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Andrew Weger.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 # Students:
@@ -45,7 +45,7 @@ def main():
 def run_test_practice_problem3():
     """ Tests the   practice_problem3  function. """
     ####################################################################
-    # TODO: 2. Implement this TEST function.
+    # DONE: 2. Implement this TEST function.
     #   It TESTS the  practice_problem3  function defined below.
     #   Include at least ** 2 ** ADDITIONAL tests beyond those we wrote.
     #
@@ -134,7 +134,17 @@ def run_test_practice_problem3():
     # SUGGESTION: Ask an assistant to CHECK your tests to confirm
     #             that they are adequate tests!
     ####################################################################
+    # My test 1
+    exp = [-6, -5, 1, 7]
+    act = practice_problem3(-10, 4, 1)
+    print("   Should return:   ", exp)
+    print('Actually returns:', act)
 
+    # My test 2
+    exp = [-100]
+    act = practice_problem3(-100, 1, 1)
+    print("   Should return:   ", exp)
+    print('Actually returns:', act)
 
 def practice_problem3(start, n, threshold):
     """
@@ -208,7 +218,7 @@ def practice_problem3(start, n, threshold):
       :type threshold: float
     """
     ####################################################################
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Some tests are already written for you (above),
     #          but you are required to write ADDITIONAL tests (above).
     ####################################################################
@@ -216,6 +226,23 @@ def practice_problem3(start, n, threshold):
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   < 15 minutes.
     ####################################################################
+    list = []
+    total = 0
+    add = 0
+
+    while total < n:
+        num = start + add
+        s = math.sin(num)
+        c = math.cos(num)
+        test = s + c
+        if test > threshold:
+            list.append(num)
+            total = total + 1
+        add = add + 1
+    return list
+
+
+
 
 
 # ----------------------------------------------------------------------
