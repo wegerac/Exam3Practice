@@ -219,7 +219,7 @@ def many_hourglasses(window, square, m, colors):
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      7  (assuming that you already have
     #                         a correct "hourglass" function above)
-    #    TIME ESTIMATE:  20 minutes (warning: this problem is challenging)
+    #    TIME ESTIMATE:  20 minutes (warning: this problem is challenging) 
     # ------------------------------------------------------------------
     num = 0
     rect = rg.Rectangle(
